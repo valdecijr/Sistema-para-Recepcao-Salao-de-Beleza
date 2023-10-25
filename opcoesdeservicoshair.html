@@ -1,0 +1,140 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - Custom checkbox</title>
+  
+  
+  
+  
+      <style>
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/*Page styles*/
+html { height: 100%; }
+
+body {
+  height: 100%;
+  margin: 0;
+  background: #363636;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+.boxes {
+  margin: auto;
+  padding: 50px;
+  background: #484848;
+}
+
+/*Checkboxes styles*/
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font: 14px/20px 'Open Sans', Arial, sans-serif;
+  color: #ddd;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6cc0e5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+    </style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+</head>
+
+<body translate="no" >
+
+<form id="cadastro" name="cadastro" method="post" action="cadastroservicoescova.php" onsubmit="return validaCampo(); return false;">
+
+  <div class="boxes">
+  <input type="checkbox" id="box-1">
+  <label for="box-1">Sustainable typewriter cronut</label>
+
+  <input type="checkbox" id="box-2">
+  <label for="box-2">Gentrify pickled kale chips </label>
+
+  <input type="checkbox" id="box-3">
+  <label for="box-3">Gastropub butcher</label>
+  
+  <input type="checkbox" id="box-3">
+  <label for="box-3">Gastropub butcher</label>
+  
+  <input type="checkbox" id="box-3">
+  <label for="box-3">Gastropub butcher</label>
+  
+  <input type="checkbox" id="box-3">
+  <label for="box-3">Gastropub butcher</label>
+  
+  <input type="checkbox" id="box-3">
+  <label for="box-3">Gastropub butcher</label>
+  
+  <input type="checkbox" id="box-3">
+  <label for="box-3">Gastropub butcher</label>
+  
+  <input type="checkbox" id="box-3">
+  <label for="box-3">Gastropub butcher</label>
+  
+  <input type="checkbox" id="box-3">
+  <label for="box-3">Gastropub butcher</label>
+  
+  <center><input name="cadastrar" class="button" type="submit" id="cadastrar" value="CONCLUIR MINHA ESCOLHA" /></center>
+</div>
+  
+  
+  
+  
+  
+
+</body>
+</html>
+ 
